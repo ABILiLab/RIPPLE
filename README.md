@@ -131,7 +131,7 @@ python model/training/pretrain/run_persistent_pair_state_pretrain.py \
 | Retrieval Q/K learning rate | 1e-6 |
 | Backbone learning rate | 1e-4, 2% warmup, cosine decay |
 | Masking | 15% tokens; 20% of sequences use spans of mean length 4 |
-| Max steps | 1,000,000 |
+| Max steps | 1,500,000 |
 
 Full training must land between 400M and 600M parameters. Pair, retrieval, and residual weights warm up from zero; the step bounds are CLI flags. `--length_edge_schedule by_length` uses 16, 24, 32, or 40 objective edges for lengths below 256, 384, 512, and at or above 512.
 
