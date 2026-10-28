@@ -1,0 +1,16 @@
+{
+  "training_source": "data/train.fold",
+  "training_records_scanned": 8,
+  "source_overlap_by_id": 0,
+  "source_overlap_by_sequence": 0,
+  "training_records_excluded": 0,
+  "training_records_kept": 8,
+  "post_filter_overlap": 0,
+  "filter_policy": "exclude_if_id_or_exact_sequence_matches",
+  "filter_enforced_during_streaming": true,
+  "exclusion_identifier_count": 8,
+  "exclusion_sequence_count": 8,
+  "monitor_source_counts": {
+    "sequence_validation": 8
+  }
+}

@@ -1,0 +1,23 @@
+# Tested with Python 3.11.
+# The +cu128 build is not on the default PyPI index.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# Pretraining, metrics, and embedding extraction.
+torch==2.9.0+cu128
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0
+
+# Present in the tested environment and used by the surrounding workflow.
+pandas==3.0.5
+tqdm==4.70.0
+einops==0.8.2
+regex==2026.7.19
+
+# Optional loaders in downstream/head. Leave commented unless those encoders are needed.
+# RIPPLE itself uses PyTorch's built-in FlashAttention and does not need the flash-attn package.
+# transformers>=4.44
+# tokenizers>=0.20
+# timm>=1.0
+# flash-attn
+# mamba-ssm
