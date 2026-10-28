@@ -10,15 +10,6 @@ The encoder is a RoPE Transformer. A sparse pair state is created at an upper la
 
 ![RIPPLE](images/RIPPLE_Figure_1_1028_v2.png)
 
-## Layout
-
-```
-images/                             architecture figure
-model/core/                         encoder, tokenizer, pair state
-model/training/pretrain/            pretraining entry point
-model/weights/                      checkpoint used for embeddings
-downstream/head/                    task heads and reference encoders
-```
 
 ## Installation
 
