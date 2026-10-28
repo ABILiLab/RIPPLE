@@ -118,9 +118,9 @@ python model/training/pretrain/run_persistent_pair_state_pretrain.py \
 | Candidates / forced slots | 8 / 2 |
 | Residual cap | 0.006 |
 | Pair loss weight | 0.1 |
-| Retrieval loss weight | 0.02 |
+| Retrieval loss weight | 0.1 |
 | Retrieval Q/K learning rate | 1e-6 |
-| Backbone learning rate | 1e-4, 2% warmup, cosine decay |
+| Backbone learning rate | 2e-5, 2% warmup, cosine decay |
 | Masking | 15% tokens; 20% of sequences use spans of mean length 4 |
 | Max steps | 1,500,000 |
 
