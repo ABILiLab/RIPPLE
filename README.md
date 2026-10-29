@@ -59,6 +59,14 @@ Leaving the CUDA pin uncommented makes the second command replace the CPU wheel.
 
 `downstream/head/` can load external encoders. Those imports are optional and are commented at the bottom of `requirements.txt`. Uncomment `transformers`, `tokenizers`, and `timm` only when using those loaders. HydraRNA additionally needs its own fairseq checkout, `flash-attn`, and `mamba-ssm`, which are not part of this install. Pretraining and the embedding example do not import them.
 
+## Pretrained Model Weights
+
+The pretrained RIPPLE model weights are available for download:
+
+- **[Download RIPPLE pretrained weights (Google Drive)](https://drive.google.com/file/d/1__yuyHy9dZ4ZpZ9rRWdwwRW3Erm8y2wn/view?usp=drive_link)**
+
+RIPPLE supports sequence-only inference without requiring external structural information, multiple-sequence alignments, or folding predictions.
+
 ## Data
 
 Training, validation, and structure monitors are three-line fold files. `T` is read as `U`. A record is kept when the sequence and structure have the same length, the length is from 8 through `max_seq_length - 2` (1024 with the default 1026), and every base is `A`, `U`, `C`, `G`, or `N`.
